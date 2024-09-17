@@ -2,110 +2,105 @@
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium';
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
-html,body{height: 100%;}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #1d1e20;
+}
 
-.clear{clear: both;}
+a {
+    color: #ed8b00;
+}
 
+.menu{
+    display: flex;
+}
 
+  .menu li{
+    margin-left: 10px;
+}
 
-.main{
-    display: grid;
+.menu a{
+    display: block;
+    padding: 10px;
+  }
+
+.home{
     background-image: url(../img/imgCapa.jpg);
     background-size: cover;
-    background-position: center;
-    min-height: 800px;
-}
-.main header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    z-index: 2;
-    background-color: #060606;
-    background-image: linear-gradient(160deg, #060606 0%, #6b7170 100%);
-
 }
 
-.logo{
-    padding: 10px;
-    /* background-color: brown; */
+  .fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(000,0,0,1)); 
+  }
 
-}
-.logo a{
-    text-decoration: none;
-    cursor: pointer;
-}
-
-nav.desktop {
-    display: grid;
-    justify-content: end;
-    /* background-color: chartreuse; */
-    padding-right: 40px;
-}
-
-
-nav.desktop ul{
+  .fundo div{
     display: grid;
     justify-items: center;
-    align-items: center;
-    list-style-type: none;
-    /* background-color:blueviolet ; */
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-nav.desktop li{
-    display: inline-block;
-    margin: 20px;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-nav.desktop a{
+  .fundo h1{
+    font-weight: bold;
+    font-size: 80px;
     color: white;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: "Bebas Neue", sans-serif;
 }
 
-nav.desktop a:hover{
-    color: rgb(255, 166, 0);
-}
-
-.titulo{
-    z-index: 3;
-    text-align: center;
-    padding-top: 300px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.titulo h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 120px;
-    font-style: normal;
-    color: #fff;
-}
-
-.titulo h3{
-    color: #fff;
+.fundo h3{
+    color: white;
     font-size: 40px;
+    padding: 20px;
     font-weight: lighter;
+  }
+
+.fundo button {
+  background-color: #ed8b00;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
 
-.titulo button{
-    /* font-family: "Bebas Neue", sans-serif; */
-    font-weight: lighter;
-    font-size: 24px;
-    color: white;
-    margin-top: 50px;
-    border: none;
-    width: 200px;
-    height: 70px;
-    background-image: linear-gradient(to right, #F7971E 0%, #c8a714 100%);
-    border-radius: 10px;
-    cursor: pointer;
+.fundo button:hover,
+.fundo button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.fundo button:hover {
+  transform: translateY(-2px);
+}
+
+.fundo button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px;
+  transform: translateY(0);
 }
