@@ -11,25 +11,39 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     align-items: center;
     flex-wrap: wrap;
     background: #1d1e20;
+    position: relative;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
 }
 
 a {
     color: #ed8b00;
 }
 
+header .logo{
+  margin-left: 20px;
+}
+
 .menu{
     display: flex;
+    margin-right: 20px;
 }
 
   .menu li{
     margin-left: 10px;
 }
+.menu li :hover{
+  color: #fcc679;
+}
+
 
 .menu a{
+  font-size: 20px;
     display: block;
     padding: 10px;
   }
@@ -110,6 +124,7 @@ a {
     justify-content: center;
     /* align-items: center; */
     margin-top: 100px;
+    margin-bottom: 100px;
     width: 100%;
     height: 500px;
 
@@ -138,8 +153,12 @@ a {
     font-family: "Bebas Neue", system-ui;
     font-weight: 400;
     font-style: normal;
-    border-bottom: solid 5px #ed8b00;
     padding-bottom: 20px;
+}
+
+.conteudo1 .div1 .span{
+  border-bottom: 5px solid #ed8b00;
+  width: 150px;
 }
 
 .conteudo1 .div2 .primeiro{
@@ -147,7 +166,7 @@ a {
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 35px;
-    font-weight: bold;
+    font-weight: 550;
 }
 .conteudo1 .div2 p{
     margin-bottom: 20px;
@@ -156,3 +175,423 @@ a {
     line-height: 35px;
     font-weight: lighter;
 }
+
+  .conteudo2{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .conteudo2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo2 .foto1{
+    background-image: url(../img/foto1.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+  }
+  .conteudo2 .foto2{
+    background-image: url(../img/foto2.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    z-index: 2;
+  }
+  .conteudo2 .foto3{
+    background-image: url(../img/foto3.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    z-index: 2;
+  }
+  .conteudo2 h2{
+    color: #fff;
+    margin-top: 300px;
+    font-family: "Bebas Neue", system-ui;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.2) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.2) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.2) 0px 8px 4px, rgba(0, 0, 0, 0.2) 0px 16px 8px, rgba(0, 0, 0, 0.2) 0px 32px 16px;
+  }
+
+  .conteudo3{
+    margin-top: 250px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+  }
+
+  .conteudo3 .capa{
+    width: 70%;
+    background: #000000;
+    height: 750px;
+    max-height: 750px;
+  }
+
+  .conteudo3 .box1{
+    width: 450px;
+    height: 100%;
+    position: relative;
+    display: block;
+    color: white;    
+    margin-left: 200px;
+    padding-top: 100px;
+  }
+
+  
+  .conteudo3 .box1 h3{
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: lighter;
+    padding: 15px 0;
+  }
+  
+  .conteudo3 .box1 h2{
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .conteudo3 .box1 .span{
+    width: 70px;
+    border-bottom: 5px solid #c85000;
+    margin-bottom: 20px;
+  }
+
+  .conteudo3 .box1 p{
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 60px;
+  }
+
+  .conteudo3 button{
+    font-size: 17px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #c85000;
+    background-color: rgba(0, 0, 0, 0);
+    color: #c85000;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .conteudo3 button:hover{
+    background-color: #c85000;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .conteudo3 .box2{
+    display: block;
+    position: absolute;
+    color: white;    
+    background: rgb(237, 139, 0);
+    background-image: linear-gradient(rgba(242, 145, 10, 0.5), rgba(247, 115, 0, 0.5)), url("../img/imgCapa.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.6s;
+    width: 700px;
+    height: 1000px;
+    top: -500px;
+    right: 0;
+    padding-left: 100px;
+  }
+
+  .conteudo3 .box2 h3{
+    padding-top: 400px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: italic;
+    margin-bottom: 40px;
+  }
+
+  .conteudo3 .box2 h2{
+    width: 300px;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .conteudo3 .box2 .span{
+    width: 70px;
+    border-bottom: 5px solid #fff;
+    margin-bottom: 20px;
+  }
+
+  .conteudo3 .box2 p{
+    width: 70%;
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+  }
+
+  .conteudo3 .box2 h4{
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+
+  .conteudo4{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .conteudo4 .box1{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .conteudo4 .box1 h3{
+    position: relative;
+    display: block;
+    right: 85px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+  }
+
+  .conteudo4 .box1 h2{
+    font-size: 70px;
+    font-family: "Bebas Neue", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+  }
+
+  .conteudo4 .box1 .span{
+    width: 120px;
+    border-bottom: 5px solid #c85000;
+    margin-bottom: 20px;
+    position: relative;
+    right: 100px;
+  }
+
+  .conteudo4 .box2{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    padding-right: 100px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+
+  .conteudo4 .box2 p{
+    font-weight: normal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .conteudo5{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #424242;
+    height: 400px;
+  }
+
+  .conteudo5 .box{
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 400px;
+  }
+
+  .conteudo5 .form{
+    width: 70%;
+  }
+  
+  .conteudo5 form{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .conteudo5 form input[type=text]{
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 42.5%;
+  }
+  .conteudo5 form input[placeholder=Nome]{
+    margin:0 2% 0 5%;
+  }
+  
+  .conteudo5 form input[type=submit]{
+    margin-top: 20px;
+    margin-left: 77.5%;
+    height: 40px;
+    width: 150px;
+    background-color: #ed8b00;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 1s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    text-transform: uppercase;
+  }
+  .conteudo5 form input[type=submit]:hover{
+    background-color:  rgba(0, 0, 0, 0.02);
+    border: 2px solid  #ed8b00;
+    color: #ed8b00;
+   
+  }
+  
+  .conteudo5 textarea{
+    width: 90%;
+    height: 150px;
+    margin-left: 5%;
+  }
+  
+  .conteudo5 .info{
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    color: white;
+  }
+
+  .conteudo5 .info h3{
+    margin: 0 0 10px 20px;
+  }
+  .conteudo5 .info a, p{
+    margin: 0 0 10px 20px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #1d1e20;
+    color: white;
+  }
+
+
+
+  @media screen and (max-width: 650px) {
+    .conteudo3 .box2{
+      max-width: 100%;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    header{
+      justify-content: center;
+
+    }
+    header .desktop{
+      display: none;
+    }
+    .home .fundo div{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-left: 5%;
+    }
+    .home .fundo h1{
+      font-size: 70px;
+    }
+    .home .fundo h3{
+      font-size: 20px;
+    }
+    .home .fundo #btn{
+      font-size: 17px;
+    }
+
+    .conteudo1{
+      flex-wrap: wrap;
+    }
+    .conteudo1 .div1{
+      width: 90%;
+      margin: 0 5%;
+    }
+    .conteudo1 .div2{
+      width: 90%;
+      margin: 20px 5% 40px 5%;
+    }
+
+    .conteudo2{
+      margin-top: 500px;
+    }
+    .conteudo2 div{
+      width: 100%;
+      margin: 100px 0;
+    }
+    .conteudo3 .capa{
+      width: 100%;
+    }
+    .conteudo3 .box1{
+
+      position: relative;
+      max-width: 90%;
+      margin: 0;
+      padding-left: 20px;
+    }
+    .conteudo3 .box2{
+      position: relative;
+      max-width: 90%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+    }
+    .conteudo4{
+      flex-wrap: wrap;
+    }
+    .conteudo4 .box2{
+      padding: 0;
+      width: 90%;
+    }
+    .conteudo5{
+      margin: 0;
+      width: 100%;
+      height: 800px;
+    }
+
+    .conteudo5 .form{
+      width: 100%;
+    }
+
+    .conteudo5 form input[type=submit]{
+      margin-left: 60%;
+    }
+  }
