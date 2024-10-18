@@ -14,9 +14,10 @@
         <a class="logo" href="index.html"><img src="img/LOGOSITE2.png" alt=""width="250" height="auto"></a>
         <nav class="desktop">
             <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SOBRE</a></li>
+                <li><a href="home">HOME</a></li>
+                <li><a href="pages/sobre.php">SOBRE</a></li>
                 <li><a href=" https://wa.me/message/W6MWR6DNXI34G1">SERVIÇOS</a></li>
+                <li><a href="contato">CONTATO</a></li>
             </ul>
         </nav>
     </header>

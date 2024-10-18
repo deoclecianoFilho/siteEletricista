@@ -234,8 +234,8 @@ header .logo{
   .conteudo3 .capa{
     width: 70%;
     background: #000000;
-    height: 750px;
-    max-height: 750px;
+    height: 850px;
+    max-height: 850px;
   }
 
   .conteudo3 .box1{
@@ -492,6 +492,9 @@ header .logo{
   .conteudo5 .info a, p{
     margin: 0 0 10px 20px;
   }
+  .conteudo5 .info a{
+    margin-bottom: 10px;
+  }
 
   footer{
     display: flex;
@@ -527,7 +530,7 @@ header .logo{
       margin-left: 5%;
     }
     .home .fundo h1{
-      font-size: 70px;
+      font-size: 50px;
     }
     .home .fundo h3{
       font-size: 20px;
@@ -549,7 +552,7 @@ header .logo{
     }
 
     .conteudo2{
-      margin-top: 500px;
+      margin-top: 800px;
     }
     .conteudo2 div{
       width: 100%;
@@ -567,12 +570,12 @@ header .logo{
     }
     .conteudo3 .box2{
       position: relative;
-      max-width: 90%;
-      top: 0;
+      max-width: 98%;
+      top: 20px;
       left: 0;
       margin: 0;
       padding: 0;
-      padding-left: 20px;
+      padding-left: 2%;
     }
     .conteudo4{
       flex-wrap: wrap;
@@ -593,5 +596,11 @@ header .logo{
 
     .conteudo5 form input[type=submit]{
       margin-left: 60%;
+    }
+    .conteudo5 .info{
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 100px;
     }
   }
