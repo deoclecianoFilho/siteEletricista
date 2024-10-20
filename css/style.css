@@ -48,6 +48,49 @@ header .logo{
     padding: 10px;
   }
 
+  .mobile{
+    position: relative;
+    display: none;
+    width: 300px;
+  }
+  
+  .mobile .menu{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    right: 0;
+  }
+  .mobile .fa-bars,.fa-xmark{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .mobile ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #c85000;
+    height: 100vh;
+    
+  }
+  
+  .mobile li{
+    display: block;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile li a{
+    display: inline-block;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+  }
+
 .home{
     background-image: url(../img/imgCapa.jpg);
     background-size: cover;
@@ -518,9 +561,22 @@ header .logo{
   @media screen and (max-width: 650px) {
     header{
       justify-content: center;
+      flex-wrap: nowrap;
+      justify-content: space-evenly
 
     }
     header .desktop{
+      display: none;
+    }
+    header .logo{
+      display: inline-block;
+      margin-right: 25%;
+    }
+    .mobile{
+      display: block;
+      
+    }
+    .mobile ul{
       display: none;
     }
     .home .fundo div{
@@ -571,7 +627,7 @@ header .logo{
     .conteudo3 .box2{
       position: relative;
       max-width: 98%;
-      top: 20px;
+      top: 0;
       left: 0;
       margin: 0;
       padding: 0;
@@ -593,9 +649,14 @@ header .logo{
     .conteudo5 .form{
       width: 100%;
     }
+    .conteudo5 .form input[type=text]{
+      width: 90%;
+      margin: 0 5%;
+      margin-bottom:20px;
+    }
 
     .conteudo5 form input[type=submit]{
-      margin-left: 60%;
+      margin-left: 55%;
     }
     .conteudo5 .info{
       text-align: center;

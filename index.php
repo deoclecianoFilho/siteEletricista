@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="javascript/script.js">
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/app.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a51009c14.js" crossorigin="anonymous"></script>
     <title>TecnoDeo</title>
 </head>
 <body>
@@ -17,7 +19,18 @@
                 <li><a href="home">HOME</a></li>
                 <li><a href="pages/sobre.php">SOBRE</a></li>
                 <li><a href=" https://wa.me/message/W6MWR6DNXI34G1">SERVIÇOS</a></li>
-                <li><a href="contato">CONTATO</a></li>
+                <li><a href="pages/contato.php">CONTATO</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <div class="btn-open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="home">HOME</a></li>
+                <li><a href="pages/sobre.php">SOBRE</a></li>
+                <li><a href=" https://wa.me/message/W6MWR6DNXI34G1">SERVIÇOS</a></li>
+                <li><a href="pages/contato.php">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -104,7 +117,7 @@
 
     </section>
     <footer>
-        <h2>Todos Os Direitos Resevados</h2>
+        <p>Todos Os Direitos Resevados</p>
     </footer>
 </body>
 </html>
